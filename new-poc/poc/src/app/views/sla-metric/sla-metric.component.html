@@ -1,0 +1,69 @@
+<div class="container-fluid">
+    <!-- HEADER SECTION -->
+    <header class="view-header">
+        <h2 class="view-title">SLA Metric Dashboard</h2>
+        <div class="breadcrumb-container">
+            <span class="breadcrumb-item"><a routerLink="/amainfra">Dashboard</a></span>/
+            <span class="breadcrumb-item">Sla Metric Dashboard</span>
+        </div>
+    </header>
+    <!-- END OF HEADER SECTION -->
+</div>
+
+<!-- METRIC BLOCKS SECTION -->
+<div class="container-fluid sections-container">
+    <div class="row">
+        <div class="col-md-2 col-lg-2" *ngFor="let item of metricBlocks">
+            <app-sticker [options]="item"></app-sticker>
+        </div>
+    </div>
+</div>
+<!-- END OF METRIC BLOCKS SECTION -->
+
+<!-- SLA DEPARTURES SECTION -->
+<div class="container-fluid">
+    <div class="panel panel-default basic-panel">
+        <header class="panel-heading">
+            <h3 class="panel-title">Departures</h3>
+        </header>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Client</th>
+                    <th>Destination</th>
+                    <th>File Name</th>
+                    <th>Package</th>
+                    <th>Estimated Departure</th>
+                    <th>SLA Cutoff</th>
+                    <th>SLA Delivery Time</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of departures">
+                    <td>{{item.client}}</td>
+                    <td>{{item.destination}}</td>
+                    <td>{{item.fileName}}</td>
+                    <td>{{item.package}}</td>
+                    <td>{{item.estimatedDeparture}}</td>
+                    <td>{{item.slaCutoff}}</td>
+                    <td>{{item.slaDeliveryTime}}</td>
+                    <td>{{item.status}}</td>
+                    <td><span class="view-btn"><i class="glyphicon glyphicon-eye-open"></i></span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<!-- END OF SLA DEPARTURES SECTION -->
+
+<!-- CHART SECTION -->
+<div class="container-fluid sections-container">
+    <div class="row">
+        <div class="col-md-12 col-lg-12">
+            <app-chart [seriesData]="chartData"></app-chart>
+        </div>
+    </div>
+</div>
+<!-- END OF CHART SECTION -->

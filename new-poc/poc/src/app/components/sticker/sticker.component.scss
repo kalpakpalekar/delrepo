@@ -1,0 +1,46 @@
+.sticker {
+    display: block;
+    background-color: #fff;
+    padding: 15px;
+    position: relative;
+    border: 1px solid rgba(0,0,0,0);
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.sticker:hover {
+    border: 1px solid rgba(0,0,0,.3);
+}
+
+.info-btn {
+    padding: 2px 4px 2px 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.sticker-header > h3 {
+    font-size: 1.4rem;
+    margin: 0;
+    margin-bottom: 8px;
+    padding: 0;
+    text-align: center;
+}
+
+.sticker-body {
+    overflow: hidden;
+}
+
+.sticker-counter {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 1px 1px rgba(0,0,0,.2);
+}

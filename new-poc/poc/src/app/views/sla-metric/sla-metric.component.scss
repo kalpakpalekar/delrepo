@@ -1,0 +1,65 @@
+.view-header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
+.view-title {
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.breadcrumb-container {
+    overflow: hidden;
+    // padding-left: 5px;
+}
+
+.breadcrumb-item {
+    font-size: 1.3rem;
+    display: inline-block;
+    padding: 0 5px;
+    // margin-right: 5px;
+}
+
+.breadcrumb-item:first-child {
+    padding-left: 0;
+}
+
+// .breadcrumb-item > a {
+//     display: block;
+//     padding: 1px 5px;
+//     background-color: #E1ECF2;
+
+//     -webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,.5);
+//     -moz-box-shadow: 0 0 2px 0 rgba(0,0,0,.2);
+//     -o-box-shadow: 0 0 2px 0 rgba(0,0,0,.2);
+//     -ms-box-shadow: 0 0 2px 0 rgba(0,0,0,.2);
+//     box-shadow: 0 0 2px 0 rgba(0,0,0,.2);
+// }
+
+.sections-container {
+    margin-bottom: 20px;
+}
+
+.basic-panel {
+    background-color: #fff;
+}
+
+.basic-panel .panel-heading {
+    background-color: #fff;
+}
+
+.basic-panel .table > thead > tr > th {
+    font-size: 1.4rem;
+}
+
+.basic-panel .table > tbody > tr > td {
+    font-size: 1.3rem;
+}
+
+.view-btn {
+    font-size: 1.2rem;
+    cursor: pointer;
+}

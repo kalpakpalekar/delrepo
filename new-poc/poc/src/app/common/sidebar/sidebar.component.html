@@ -1,0 +1,26 @@
+<!-- SIDEBAR MENU SECTION -->
+<div class="sidebar" [ngClass]="{'collapsed': collapsed}">
+  <span class="collapse-btn" (click)="onCollapseClick()"><i class="glyphicon glyphicon-chevron-right"></i></span>
+  <!-- LOGO SECTION -->
+  <div class="logo-container">
+    <a class="logo" href="#">
+      <div class="logo-icon"><img src="../../../assets/images/ama-logo.png" alt="AMA"></div>
+      <span class="logo-text">Doppler</span>
+    </a>
+  </div>
+  <!-- END OF LOGO SECTION -->
+
+  <!-- MENU SECTION -->
+  <div class="sidebar-menu-container">
+    <ul class="sidebar-menu">
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/"><span class="menu-icon"><i class="fa fa-windows" aria-hidden="true"></i></span><span class="menu-text">Dashboard</span></a></li>
+      <li routerLinkActive="active" *ngFor="let item of menuList"><a [routerLink]="item.link"><span class="menu-icon"><i class="fa" aria-hidden="true" [ngClass]="item.icon"></i></span>{{item.name}}</a></li>
+      <!-- <li routerLinkActive="active"><a routerLink="/ama-infra"><span class="menu-icon"><i class="fa fa-desktop" aria-hidden="true"></i></span>AMAInfra Dashboard</a></li>
+      <li routerLinkActive="active"><a routerLink="/ama-metric"><span class="menu-icon"><i class="fa fa-bar-chart" aria-hidden="true"></i></span>AMAMetric Dashboard</a></li>
+      <li routerLinkActive="active"><a routerLink="/sla-metric"><span class="menu-icon"><i class="fa fa-pie-chart" aria-hidden="true"></i></span>SLA Metric Dashboard</a></li>
+      <li routerLinkActive="active"><a routerLink="/nav-metric"><span class="menu-icon"><i class="fa fa-line-chart" aria-hidden="true"></i></span>Nav Metric Dashboard</a></li> -->
+    </ul>
+  </div>
+  <!-- END OF MENU SECTION -->
+</div>
+<!-- END OF SIDEBAR MENU SECTION -->

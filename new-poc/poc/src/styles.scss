@@ -1,0 +1,30 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Barlow',sans-serif;
+    font-size:1.6rem;
+    font-weight:400;
+    color:#222;
+    background-color:#F0F0F0;
+    // margin-top: 40px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Barlow',sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, th {
+    font-weight: 500;
+}
+input, label {
+    font-family: 'Barlow',sans-serif;
+    font-weight:400;
+}
